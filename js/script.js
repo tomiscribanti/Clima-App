@@ -44,7 +44,7 @@ function onSucces(position) {
         longitude,
     } = position.coords;
 
-    api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
+    api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}&lang=es`;
     fetchData();
 }
 
@@ -54,7 +54,7 @@ function onError() {
 }
 
 function requestApi(city) {
-    api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+    api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=es`;
     fetchData();
 }
 
